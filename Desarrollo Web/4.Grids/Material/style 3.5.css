@@ -1,0 +1,48 @@
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    
+    "header header header" /* 4 filas y 3 cols */
+    "nav main main"
+    "aside aside aside"
+    "footer footer footer";
+    gap: 10px;
+}
+
+
+.header {
+  grid-area: header;
+  background-color: #89b8ed;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #ed89a7;
+  padding: 20px;
+  text-align: center;
+}
+
+.main {
+    grid-area: main;
+    background-color: #89ed95;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+.aside {
+    grid-area: aside;
+    background-color: #e1ed89;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #ed89d6;
+    padding: 20px;
+    text-align: center;
+}

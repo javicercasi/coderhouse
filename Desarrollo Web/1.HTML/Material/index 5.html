@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer sitio web</title>
+</head>
+<body>
+    <h1>Mi primer sitio web en código</h1>
+    <p>Éste es un párrago de ejemplo</p>
+
+    <!-- Enlace absoluto, a otra pagina-->
+    <a href="https://www.google.com">Prensa</a>
+
+    <!--Enlace relativo, de mi sitio-->
+    <a href="servicios.html">Ver servicios</a>
+
+    <!--Enlace interno, de la misma pagina, con el nombre de la seccion-->
+    <a href="#testimonios">Contacto</a>
+
+    <section id="testimonios">
+        <h2>Testimonios</h2>
+        <p>Contenido de la sección de testimonios...</p>
+    </section>
+
+    <!--Videos-->
+    <video src="video.mp4" controls></video>
+
+    <!-- Audio-->
+    <audio src="audio.mp3" controls></audio>
+
+    <!-- Tablas para organizarnos o para armar emails -->
+     <table>
+        <tr> <!--Fila-->
+            <th>Nombre</th> <!--Encabezado de la columna-->
+            <th>Edad</th>
+            <th>Ciudad</th>
+            <th>Pais</th>
+        </tr>
+        <tr>
+            <td>Juan</td> <!--Celda-->
+            <td>25</td>
+            <td>CDMX</td>
+            <td>México</td>
+     </table>
+
+
+    <!-- Formularios -->
+     <form action="/submit" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="password">Contraseña:</label><br>
+        <input  type="password" name="password" id="password" required><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea><br>
+
+        <label for="genero">Género:</label><br>
+       
+        <input type="radio">
+        <label for="">Hombre</label>
+
+        <input type="radio">
+        <label for="">Mujer</label>
+
+        <input type="radio">
+        <label for="">Prefiero no decirlo</label><br>
+
+        <label for="suscribe">Suscribirse:</label>
+        <input type="checkbox" name="suscribe" id="suscribe"><br>
+
+    <!--Menu desplegable-->
+        <label for="pais">Pais de origen:</label>
+        <select name="" id="">
+            <option value="">Brasil</option>
+            <option value="">México</option>
+            <option value="">Argentina</option>
+        </select><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>

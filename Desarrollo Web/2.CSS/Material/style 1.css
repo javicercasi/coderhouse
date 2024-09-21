@@ -1,0 +1,41 @@
+
+/* Selector + propiedad + valor 
+
+
+/* Herencia: */
+
+/* Toma lo que esté mas abajo, si eso esta definido en 2 lugares
+Pero, si hay especificidad, se toma el que tenga esa especificidad */
+
+/* Selectores de etiqueta*/
+
+div{
+    color: green;
+}
+
+span{
+    color: purple;
+}
+
+div span{
+    color: yellow;
+}
+
+/* Selectores de clase */
+
+.titulos{
+    color: gray;
+    text-decoration: underline;
+
+}
+
+/* Selectores de ID */
+/* Es para elementos unicos */
+
+#testimonios{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+/* 3.5 Propiedades */

@@ -1,0 +1,30 @@
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .custom-style {
+    background-color: red;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .custom-style {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 769px) {
+  .custom-style {
+    background-color: green;
+  }
+}
+
+/* Cambiar el color de fondo de un botón al pasar el cursor sobre él */
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Estilo para el primer elemento de una lista */
+li:first-child {
+    font-weight: bold;
+}

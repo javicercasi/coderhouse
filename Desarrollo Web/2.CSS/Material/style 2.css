@@ -1,0 +1,91 @@
+
+/* Reset de Css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #cd5002;
+    --secondary-color: #333;
+}
+
+
+div{
+    color: green;
+}
+
+span{
+    color: purple;
+}
+
+div span{
+    color: yellow;
+}
+
+/* Selectores de clase */
+
+.titulos{
+    color: gray;
+    text-decoration: underline;
+
+}
+
+/* Selectores de ID */
+/* Es para elementos unicos */
+
+#testimonios{
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Selectores de atributo */
+input[type="text"] {
+    background-color: yellow;
+}
+
+
+/* 3.5 Propiedades */
+
+.titulo-servicios{
+    color: blue;
+    font-size: 24px; /* Absolute size */
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Rajdhani", sans-serif;
+}
+
+
+.parrafo-servicios{
+    color: gray;
+    font-size: 1.5em; /* Relative size, 1.5*El padre */
+    font-style: italic;
+    text-align: justify;
+    font-weight: bold;
+    /* Familia online de google fonts importada: */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+section{
+    color: rgb(255, 0, 187);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+p {
+    color:rgb(61, 127, 184);
+    color: rgba(0, 0, 1, 0.5); /* alpha es opacidad */ /*Tambien se puede con hexadecinal */
+    font-size: 20px; /* Unidades de medida: px, em, rem, % */
+    margin: 30px;
+    text-transform: uppercase;
+}
+
+section p{
+    color: var(--main-color);
+    font-size: 25px;
+}

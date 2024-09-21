@@ -1,0 +1,323 @@
+/* Estilos para el cuerpo */
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #252525;
+    background-image: url("images/fondos/ropa-6.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/* General grid container */
+.grid-contenedor {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+}
+
+/* Header */
+.grid-header {
+    grid-area: header;
+    padding: 15px;
+    background-color: #000000;
+}
+
+.header-flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-flexbox ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header-flexbox ul li {
+    margin: 0 25px;
+}
+
+.header-flexbox ul li a {
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: 1.1rem;
+}
+
+.header-flexbox ul li a:hover {
+    color: #ce9907;
+}
+
+.logo {
+    max-height: 60px; /* Ajusta el tamaño del logo */
+}
+
+/* Estilos para la sección principal */
+section {
+    background-color: #f8f8f86e; /* Fondo claro */
+    padding: 15px;
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px auto;
+    max-width: 85%; /* Ancho máximo de la sección */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.548); /* Sombra ligera para darle profundidad */
+}
+
+/* Title Section */
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo h1 {
+    font-size: 2.5rem;
+    color: #0056b3;
+}
+
+h1 {
+    font-size: 2.0em;
+    color: #0056b3;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.titulo p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.grid-main {
+    grid-area: main;
+    min-height: 100vh;
+}
+
+/* Categories Section */
+.grid-categorias {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.grid-categorias h2 {
+    font-size: 2.0em;
+    color: #0056b3;
+    text-align: left;
+    margin-left: 100px;
+}
+
+/* Flexbox for categories */
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+.caja {
+    background-color: #808080e3; /* Fondo claro */
+    padding: 1%;
+    text-align: center;
+    width: 270px;
+    border-radius: 10px; /* Bordes redondeados */
+}
+.caja img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.caja p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Footer */
+.grid-footer {
+    grid-area: footer;
+    background-color: #f0f0f04d;
+}
+
+.logo-pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Espacio entre los logos */
+    padding: 10px;
+}
+
+
+/* Estilos para el contacto */
+section form {
+    background-color: #f8f8f85d;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea[name="descripcion"]
+{
+    background-color: rgba(165, 201, 251, 0.2);
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #242c38;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+select {
+    background-color: rgba(165, 201, 251, 0.2);
+    width: 10%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #242c38;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #f6a936;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ce9907;
+}
+
+#main {
+    min-height: 77vh;
+}
+
+/* Media query para tabletas (pantallas de hasta 768px de ancho) */
+@media (max-width: 768px) {
+    .header-flexbox {
+        flex-direction: column;
+    }
+
+    .header-flexbox ul {
+        gap: 30px;
+    }
+
+    .header-flexbox ul li {
+        margin: 0px 0px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .categorias {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .caja {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .titulo h1 {
+        font-size: 2rem;
+    }
+
+    .titulo p {
+        font-size: 1.1rem;
+    }
+
+    .grid-categorias h2 {
+        font-size: 2rem;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    section {
+        max-width: 90%;
+    }
+    
+    input[type="submit"] {
+        /* Centramos el botón */
+        width: 100%;
+    }
+
+    select {
+        width: 27%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajusta el espacio entre los elementos del menú */
+    .header-flexbox ul {
+        gap: 10px;
+
+    }
+
+    /* Ajusta el ancho de las cajas */
+    .caja {
+        width: 140px;
+    }
+
+    /* Alinea los elementos de las categorías */
+    .categorias {
+        gap: 10px;
+    }
+
+    /* Ajusta los tamaños de fuente */
+    .titulo h1 {
+        font-size: 1.5rem;
+    }
+
+    .titulo p {
+        font-size: 0.9rem;
+    }
+
+    /* Alinea el título de las categorías */
+    .grid-categorias h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Asegura que las secciones estén bien centradas */
+    section {
+        max-width: 90%;
+    }
+
+    /* Ajusta los campos de texto */
+    input[type="text"],
+    input[type="email"],
+    textarea[name="descripcion"] {
+        font-size: 0.9em;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+}

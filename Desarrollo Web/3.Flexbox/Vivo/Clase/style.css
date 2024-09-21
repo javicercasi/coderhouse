@@ -1,0 +1,139 @@
+
+/*
+!important
+ID = aquellas cajas principales o raices / no se pueden repetir
+Clases = cajas secundarias / se pueden repetir
+selectores/etiqueta = cajas semanticas del propio html / se pueden repetir
+*/
+
+
+/* Estilos reset */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0; /* Margen externo */
+    padding: 0; /* Espaciado interno */
+}
+
+ul li {
+    display: inline-block;
+}
+
+#body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Estilos para el header */
+#header{
+    background-color: aquamarine;
+    width: 100%;
+    height: 80px;
+}
+
+#nav{
+    /*display: inline-block; Inline no aplica a los hijos, solo al padre, es asi*/
+    display: flex; /* El padre ordena a los hijos */
+    justify-content: center;
+    align-items: center;
+    /* Voy a tomar el 100% de mi padre, que son 80px. Si no, usa lo del ancho de la imagen, y ocupa menos. Si no, poner en rojo y mirar lo del borde */
+    height: 100%;
+    flex-direction: column;
+}
+
+.navSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+.navImg {
+    width: 60px;
+}
+
+/* Estilos main */
+
+#main{
+    min-height: 100vh;
+}
+
+
+/* Page Contacto */
+#form{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-color: rgb(255, 168, 127);
+    padding: 50px;
+}
+
+input{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* 
+Orden:
+margin : Espaciado externo de la caja
+padding : Espaciado interno de la caja
+border : Borde de la caja
+content : Contenido de la caja
+
+
+margin-top / bottom / left / right
+padding-top / bottom / left / right
+border-top / bottom / left / right
+
+1er manera:
+margin: 10px 20px 30px 40px; // top right bottom left
+padding: 10px 20px 30px 40px; // top right bottom left
+border: 10px 20px 30px 40px; // top right bottom left
+
+
+2da manera:
+margin: 10px 20px; // top-bottom right-left
+padding: 10px 20px; // top-bottom right-left
+border: 10px 20px; // top-bottom right-left
+
+
+
+border-style: Es el tipo de borde
+border-width: Es el ancho del borde
+border-color: Es el color del borde
+border-radius: Es la redondez del borde
+
+*/
+
+/*/////////////////////////*/
+
+
+/* Page Consolas */
+
+
+
+/* Estilos Footer */
+
+#footer{
+    display: flex;
+    margin-top: auto; /* Se va a la parte de abajo */
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(56, 151, 234);
+    
+}
+
+.footerImgLogo {
+    width: 60px;
+}
+
+.footerNav ul{
+    display: flex;
+    flex-direction: column;
+}

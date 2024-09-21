@@ -1,0 +1,45 @@
+
+
+/*
+
+Prioridades:
+Selector = Etiqueta html
+Class = Etiqueta para la caja
+ID = Etiqueta que no se repiten
+!important = Voy a tomar esto, no me importa la cascada ni la clase
+
+
+*/
+
+
+
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0; /* Margen externo */
+    padding: 0; /* Espaciado interno */
+}
+
+
+h1{
+    color: green;
+    font-size: 50px;
+}
+
+p{
+    color: brown;
+}
+
+article p {
+    color: aqua;
+}
+
+.secc1-titulo{
+    color: blue;
+}
+
+.secc2 p{
+    color: red;
+}

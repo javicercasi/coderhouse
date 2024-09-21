@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="icon" href="../images/logos/icono.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../style.css">
+        <title>Tienda Nova</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="grid-header">
+            <div class="header-flexbox">
+                <img src="../images/logos/logo-tienda.jpg" alt="Nova Logo" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="hombre.html">Hombre</a></li>
+                        <li><a href="mujer.html">Mujer</a></li>
+                        <li><a href="sale.html">Sale!</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--2. SEGUNDA ESTRUCTURA = CUERPO DE LA PAGINA-->
+        <main id="main">
+            <h1>ENVIAR UN TICKET</h1>
+            <section>
+                <form action="/submit" method="post">
+                    <label for="nombre">Nombre y Apellido:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br>
+            
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+            
+                    <label for="contacto">Celular de contacto:</label><br>
+                    <input type="text" id="contacto" name="contacto" required><br>
+            
+                    <label for="motivo">Motivo de tu contacto:</label><br>
+                    <select name="motivo" id="motivo" required>
+                        <option value="consulta">Consulta</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="sugerencia">Sugerencia</option>
+                    </select><br>
+            
+                    <label for="asunto">Asunto:</label><br>
+                    <input type="text" id="asunto" name="asunto" required><br>
+            
+                    <label for="descripcion">Descripción:</label><br>
+                    <textarea name="descripcion" id="descripcion" required></textarea><br><br>
+            
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="grid-footer">
+            <section class="logo-pie">
+                <a href="https://www.instagram.com/javi.cercasi/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #000000;"></i>
+                </a>
+                <a href="https://x.com/javicercasi?s=11" target="_blank">
+                    <i class="fa-brands fa-x-twitter fa-2xl" style="color: #000000;"></i>
+                </a>
+                <a href="https://www.facebook.com/Javi.cercasi?mibextid=LQQJ4d" target="_blank">
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: #000000;"></i>
+                </a>
+            </section>
+        </footer>
+    </body>
+</html>

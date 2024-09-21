@@ -1,0 +1,62 @@
+
+/* Selector + propiedad + valor 
+
+selector {
+    propiedad: valor;
+}
+*/
+
+p {
+    color:rgb(61, 127, 184);
+    color: rgba(0, 0, 1, 0.5); /* alpha es opacidad */ /*Tambien se puede con hexadecinal */
+    font-size: 20px; /* Unidades de medida: px, em, rem, % */
+    margin: 30px;
+}
+
+
+h1 {
+    color: #333;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+body {
+    background-color: #f0f0f0;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+/* Herencia: */
+
+/* Toma lo que esté mas abajo, si eso esta definido en 2 lugares
+Pero, si hay especificidad, se toma el que tenga esa especificidad */
+
+/* Estilo aplicado al elemento padre <section> */
+section {
+    color: blue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+    
+/* Estilo específico para el elemento hijo <h2> */
+section h2 {
+color: red;
+font-size: 24px;
+}
+
+/* Estilo específico para el elemento hijo <p> */
+section p {
+font-size: 16px;
+}
+
+/* OTRO */
+
+div{
+    color: green;
+}
+
+span{
+    color: purple;
+}
+
